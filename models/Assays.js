@@ -7,7 +7,6 @@ const assaySchema = new mongoose.Schema({
     },
     sampType: {
         type: String,
-        enum: ['Serum', 'Li-Hep Plasma', 'EDTA', 'Whole blood', 'Blood spot'],
         required: true,
     },
 })

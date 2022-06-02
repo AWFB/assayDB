@@ -25,10 +25,22 @@ const assay_details = (req, res) => {
   }) 
 }
 
+const create_assay_post = (req, res) => {
+  const assay = new Assay(req.body)
+
+  assay.save()
+      .then((result) => {
+          res.redirect('/assays')
+      })
+      .catch((err) => {
+          console.log(err)
+      })
+}
 
 
 module.exports = {
   assay_index,
   assay_details,
   create_assay_get,
+  create_assay_post,
 }

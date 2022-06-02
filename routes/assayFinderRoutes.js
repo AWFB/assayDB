@@ -6,6 +6,7 @@ const router = express.Router()
 router.get('/assays', assayController.assay_index)
 router.get('/assays/:id', assayController.assay_details)
 router.get('/assays/create/assay', assayController.create_assay_get)
+router.post('/assays/create/assay', assayController.create_assay_post)
 
 // // Blog routes
 // router.get('/', blogController.blog_index)
