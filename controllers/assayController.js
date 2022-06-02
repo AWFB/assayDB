@@ -10,6 +10,10 @@ const assay_index = (req, res) => {
         })
 }
 
+const create_assay_get = (req, res) => {
+  res.render('createassay')
+}
+
 const assay_details = (req, res) => {
   const id = req.params.id
   Assay.findById(id)
@@ -21,9 +25,7 @@ const assay_details = (req, res) => {
   }) 
 }
 
-const create_assay_get = (req, res) => {
-  res.render('createAssay')
-}
+
 
 module.exports = {
   assay_index,
