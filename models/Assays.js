@@ -11,5 +11,7 @@ const assaySchema = new mongoose.Schema({
     },
 })
 
+assaySchema.index({ name: 'text' })
+
 const Assays = mongoose.model('Assays', assaySchema)
 module.exports = Assays

@@ -1,17 +1,19 @@
 <nav>
-    <div class="site-title">
+    <div>
         <a href="/">
             <h1>Assay</h1>
             <h2>Database</h2>
         </a>
     </div>
-    <div>
-        <ul>
-            <li>Search</li>
-            <a href="/assays/create/assay"><li>Create Assay</li></a>
-            <li>Log in</li>
-            <li>Log out</li>
-            
-        </ul>
-    </div>
+    <ul>
+        <a href="/assays/create/assay"><li>Create Assay</li></a>
+        <li>Log in</li>
+        <li>Log out</li>
+        <li>
+          <form action="/search" method="POST">
+            <input type="search" name="searchAssay" />
+            <button>Submit</button>
+        </li>
+        </form>
+    </ul>
 </nav>

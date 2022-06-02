@@ -1,0 +1,19 @@
+<html lang="en">
+    <%- include("./partials/head.ejs") %>
+
+    <body>
+        <%- include("./partials/nav.ejs") %>
+        <div>
+            <% if (result != '') { %> <% result.forEach(result => { %>
+            <a class="single" href="/assays/<%= result._id %>">
+                <h3>Name: <%= result.name %></h3>
+                <p>Sample type:<%= result.sampType %></p>
+            </a>
+            <% }) %> <% } else { %>
+            <p>There are no assays to display</p>
+            <% } %>
+        </div>
+
+        <%- include("./partials/footer.ejs") %>
+    </body>
+</html>
