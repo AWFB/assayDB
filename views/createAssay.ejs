@@ -4,12 +4,12 @@
     <body>
         <%- include('./partials/nav.ejs') %>
 
-        <div>
+        <div class="create-assay content">
             <form action="/assays/create/assay" method="POST">
                 <label for="name">Assay name:</label>
                 <input type="text" id="name" name="name" required />
                 
-                <label for="sampType">Sample Type</label>
+                <label for="sampType">Sample Type:</label>
                 <input type="text" id="sampType" name="sampType" required />
 
                 <button>Submit</button>

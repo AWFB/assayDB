@@ -1,0 +1,138 @@
+/* reset styles */
+p,
+h1,
+h2,
+h3,
+a,
+ul {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: #222;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 20px;
+    font-family: 'Poppins', sans-serif;
+    background-color: lightgray;
+}
+
+/* index styles */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 30px;
+}
+main {
+    margin: 30px auto;
+    padding: 10px;
+}
+main img {
+    grid-column: span 6;
+    width: 100%;
+    border-radius: 6px;
+}
+main .welcome {
+    grid-column: 7 / span 5;
+    margin-bottom: 30px;
+}
+.welcome > h2 {
+    margin-bottom: 10px;
+}
+
+main .welcome p {
+    grid-column: 7 / span 5;
+    padding-bottom: 30px;
+}
+
+main > h2 {
+    grid-column: span 12;
+    text-align: center;
+    font-size: 1.5em;
+    padding-top: 20px;
+}
+main .card {
+    grid-column: span 4;
+    background: lightskyblue;
+    padding: 10px 20px;
+    border-radius: 6px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.05);
+
+}
+
+
+/* nav & footer styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid darkgreen;
+    text-transform: uppercase;
+    text-decoration: none;
+    align-items: flex-end;
+}
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+nav li {
+    list-style-type: none;
+    margin-left: 20px;
+    
+}
+nav h1 {
+    font-size: 1.3em;
+    color: darkgreen;
+    letter-spacing: 2px;
+}
+nav h2 {
+    font-size: 1.1em;
+    color: darkgreen;
+    letter-spacing: 1px;
+}
+
+nav a {
+    color: #777;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+footer {
+    color: #777;
+    text-align: center;
+    margin: 80px auto 20px;
+}
+
+/* create styles */
+.create-assay form {
+    max-width: 250px;
+    margin: 0 auto;
+}
+.create-assay input,
+.create-assay textarea {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 8px;
+}
+.create-assay label {
+    display: block;
+    margin-top: 24px;
+}
+textarea {
+    height: 120px;
+}
+.create-assay button {
+    text-align: center;
+    margin-top: 20px;
+    background: crimson;
+    color: white;
+    padding: 6px;
+    border: 0;
+    font-size: 1.2em;
+    cursor: pointer;
+}
