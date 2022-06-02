@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partials/head.ejs') %>
+    <body>
+        <%- include('./partials/nav.ejs') %>
+
+        <div>
+            <form action="/assays" method="POST">
+                <label for="name">Assay name:</label>
+                <input type="text" id="name" name="name" required />
+                
+                <label for="sampType">Sample Type</label>
+                <input type="text" id="sampType" name="sampType" required />
+
+                <button>Submit</button>
+            </form>
+        </div>
+        <%- include('./partials/footer.ejs') %>
+    </body>
+</html>

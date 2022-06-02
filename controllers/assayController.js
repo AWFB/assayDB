@@ -3,7 +3,7 @@ const Assay = require('../models/Assays')
 const assay_index = (req, res) => {
     Assay.find({})
         .then((result) => {
-            res.render('index', {assays: result})
+            res.render('assays', {assays: result})
         })
         .catch((err) => {
             console.log(err)
@@ -21,7 +21,12 @@ const assay_details = (req, res) => {
   }) 
 }
 
+const create_assay_get = (req, res) => {
+  res.render('createAssay')
+}
+
 module.exports = {
   assay_index,
   assay_details,
+  create_assay_get,
 }

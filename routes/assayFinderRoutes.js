@@ -3,8 +3,9 @@ const assayController = require('../controllers/assayController')
 
 const router = express.Router()
 
-router.get('/', assayController.assay_index)
-router.get('/:id', assayController.assay_details)
+router.get('/assays', assayController.assay_index)
+router.get('/assays/:id', assayController.assay_details)
+router.get('/createAssay', assayController.create_assay_get)
 
 // // Blog routes
 // router.get('/', blogController.blog_index)

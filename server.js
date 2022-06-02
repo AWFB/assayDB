@@ -8,10 +8,11 @@ app.set('view engine', 'ejs')
 require('dotenv').config()
 
 const assayRoutes = require('./routes/assayFinderRoutes')
-app.use('/assays', assayRoutes)
-const PORT = process.env.PORT || 3000
+app.use('/', assayRoutes)
+
 
 // Connect to mongoDB and start server if successful
+const PORT = process.env.PORT || 3000
 mongoose
     .connect(process.env.MONGODB_URI)
     .then((result) => app.listen(PORT))
