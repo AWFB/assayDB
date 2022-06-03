@@ -22,7 +22,7 @@ const search_assay_post = (req, res) => {
 }
 
 const create_assay_get = (req, res) => {
-    res.render('createassay')
+    res.render('createAssay')
 }
 const search_assay_get = (req, res) => {
     res.render('assaysearch')
