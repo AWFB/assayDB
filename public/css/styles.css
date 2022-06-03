@@ -12,7 +12,7 @@ ul {
 }
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 body {
-    max-width: 900px;
+    max-width: 1400px;
     margin: 20px auto;
     padding: 0 20px;
     font-family: 'Poppins', sans-serif;
@@ -34,6 +34,7 @@ nav ul {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    font-size: 1.3em;
 }
 nav li {
     list-style-type: none;
@@ -42,7 +43,7 @@ nav li {
 nav h1 {
     align-content: flex-start;
     font-size: 3em;
-    color: darkgreen;
+    color: goldenrod;
 }
 nav p,
 nav a {
@@ -52,6 +53,10 @@ nav a {
 nav form {
     margin: 0 auto;
 }
+input {
+    height: 25px;
+}
+
 footer {
     color: #777;
     text-align: center;
@@ -77,14 +82,17 @@ main img {
 main .welcome {
     grid-column: 7 / span 5;
     margin-bottom: 30px;
+    padding-left: 40px;
+    padding-top: 40px;
+
 }
 .welcome > h2 {
     margin-bottom: 10px;
 }
 
 main .welcome p {
-    grid-column: 7 / span 5;
     padding-bottom: 30px;
+    font-size: 1.3em;
 }
 
 main > h2 {

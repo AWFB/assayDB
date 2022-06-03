@@ -6,8 +6,8 @@
         <div>
             <% if (result != '') { %> <% result.forEach(result => { %>
             <a class="single" href="/assays/<%= result._id %>">
-                <h3>Name: <%= result.name %></h3>
-                <p>Sample type:<%= result.sampType %></p>
+                <h3><%= result.name %></h3>
+                <p><%= result.sampType %></p>
             </a>
             <% }) %> <% } else { %>
             <p>There are no assays to display</p>
@@ -17,3 +17,5 @@
         <%- include("./partials/footer.ejs") %>
     </body>
 </html>
+
+
