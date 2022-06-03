@@ -3,6 +3,8 @@ const app = express()
 app.use(express.static('public'))
 app.use(express.urlencoded({ extended: true }))
 const mongoose = require('mongoose')
+const cors = require('cors')
+app.use(cors())
 
 app.set('view engine', 'ejs')
 require('dotenv').config()
