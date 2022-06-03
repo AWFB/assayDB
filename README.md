@@ -1,7 +1,7 @@
 # AssayDB
 An online assay database designed to provide similar functionality to AssayFinder (http://assayfinder.com/) but more feature rich and properly maintained.
 
-**Link to project:** TBA
+**Link to project:** https://assay-db.herokuapp.com/
 
 TODO:
 Link to image here
