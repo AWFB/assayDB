@@ -2,7 +2,6 @@
     <%- include("./partials/head.ejs") %>
 
     <body>
-        <%- include("./partials/nav.ejs") %>
         <div>
             <% if (result != '') { %> <% result.forEach(result => { %>
             <a class="single" href="/assays/<%= result._id %>">

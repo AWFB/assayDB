@@ -1,5 +1,6 @@
 const Assay = require('../models/Assays')
 
+
 const assay_index = (req, res) => {
     Assay.find({})
         .then((result) => {
